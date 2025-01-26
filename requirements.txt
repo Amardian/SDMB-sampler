@@ -1,0 +1,7 @@
+numpy>=1.18.0
+pandas>=1.0.0
+
+from sdmbsampler import SDMBSampler
+
+sampler = SDMBSampler(target_column='label')
+balanced_data = sampler.fit_resample(your_dataframe)
